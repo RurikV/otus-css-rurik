@@ -1,149 +1,194 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mod Studio</title>
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,900;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/style/typography.css" rel="stylesheet" />
+    <link href="/style/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <header>
-        <h2>Mod</h2>
-        <nav>
-            <ul>
-                <li><a href="#Biography">Biography</a></li>
-                <li><a href="#Designers">Designers</a></li>
-                <li><a href="#Testimonials">Testimonials</a></li>
-                <li><a href="#StrongPoints">Strong points</a></li>
-            </ul>
-        </nav>
+      <h1>Mod</h1>
+      <nav>
+        <ul class="roboto-medium">
+          <li><a href="#Biography">Biography</a></li>
+          <li><a href="#Designers">Designers</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#StrongPoints">Strong points</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <header>
-            <h1>Mod Studio</h1>
-            <p>Modern Web Studio</p>
+      <header class="roboto-medium">
+        <h2>Mod Studio</h2>
+        <p>Modern Web Studio</p>
+      </header>
+
+      <section id="Biography">
+        <header class="roboto-bold">
+          <h3>Biography</h3>
         </header>
+        <h2>Katya Mills</h2>
+        <article class="biography-text-color">
+          <div class="roboto-medium">
+            <p>Art Director</p>
+            <p>Scenography / Styling / Creative Photography / Design</p>
+          </div>
+          <figure>
+            <img
+              src="img/jared-weiss-P3cB0ynqYBw-unsplash%201.jpg"
+              alt="Katya Mills walking across a desert landscape"
+            />
+            <figcaption class="bitter-regular">
+              <blockquote>
+                “The more I deal with the work as something that is my own, as
+                something that is personal, the more successful it is.”
+              </blockquote>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
 
-        
-        <section id="Biography">
-            <header>
-                <h2>Katya Mills</h2>
-                <p>Art Director</p>
-                <p>Scenography / Styling / Creative Photography / Design</p>
-            </header>
-            <figure>
-                <img src="img/jared-weiss-P3cB0ynqYBw-unsplash%201.jpg" alt="Katya Mills walking across a desert landscape">
-                <figcaption>
-                    <blockquote>
-                        “The more I deal with the work 
-                        as something that is my own,
-                        as something that is personal, 
-                        the more successful it is.”
-                    </blockquote>
-                </figcaption>
-            </figure>
-        </section>        
-        
+      <section id="Designers" class="roboto-bold">
+        <header>
+          <h3>Designers</h3>
+        </header>
+        <article>
+          <img
+            src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.jpg"
+            alt="Jess Wonder gazing into the distance with cloudy skies in the background"
+          />
+          <h4>JESS WONDER</h4>
+          <dl>
+            <dt>From/</dt>
+            <dd>Be more flower</dd>
+            <dt>Skills/</dt>
+            <dd>Design Strategy / Marketing</dd>
+          </dl>
+        </article>
+        <article>
+          <img
+            src="img/stil-P1jQzyvqfns-unsplash%201.jpg"
+            alt="Kameron Clein holding a planner and a phone"
+          />
+          <h4>KAMERON CLEIN</h4>
+          <dl>
+            <dt>From/</dt>
+            <dd>Be more flower</dd>
+            <dt>Skills/</dt>
+            <dd>Design Strategy / Marketing</dd>
+          </dl>
+        </article>
+        <article>
+          <img
+            src="img/stil-_mvSe9q8_n4-unsplash%201.jpg"
+            alt="LOUISSE RED sitting with a notebook on her lap, holding a coffee cup"
+          />
+          <h4>LOUISSE RED</h4>
+          <dl>
+            <dt>From/</dt>
+            <dd>Be more flower</dd>
+            <dt>Skills/</dt>
+            <dd>Design Strategy / Marketing</dd>
+          </dl>
+        </article>
+        <article>
+          <img
+            src="img/stil-P1jQzyvqfns-unsplash%201.jpg"
+            alt="Kameron Clein holding a planner and a phone"
+          />
+          <h4>KAMERON CLEIN</h4>
+          <dl>
+            <dt>From/</dt>
+            <dd>Be more flower</dd>
+            <dt>Skills/</dt>
+            <dd>Design Strategy / Marketing</dd>
+          </dl>
+        </article>
+      </section>
 
-        <section id="Designers">
-            <h2>Designers</h2>
-            <article>
-                <img src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.jpg" alt="Jess Wonder gazing into the distance with cloudy skies in the background">
-                <h3>Jess Wonder</h3>
-                <dl>
-                    <dt>From</dt>
-                    <dd>Be more flower</dd>
-                    <dt>Skills</dt>
-                    <dd>Design Strategy, Marketing</dd>
-                </dl>
-            </article>
-            <article>
-                <img src="img/stil-P1jQzyvqfns-unsplash%201.jpg" alt="Kameron Clein holding a planner and a phone">
-                <h3>Kameron Clein</h3>
-                <dl>
-                    <dt>From</dt>
-                    <dd>Be more flower</dd>
-                    <dt>Skills</dt>
-                    <dd>Design Strategy, Marketing</dd>
-                </dl>
-            </article>
-            <article>
-                <img src="img/stil-_mvSe9q8_n4-unsplash%201.jpg" alt="LOUISSE RED sitting with a notebook on her lap, holding a coffee cup">
-                <h3>LOUISSE RED</h3>
-                <dl>
-                    <dt>From</dt>
-                    <dd>Be more flower</dd>
-                    <dt>Skills</dt>
-                    <dd>Design Strategy, Marketing</dd>
-                </dl>
-            </article>
-            <article>
-                <img src="img/stil-P1jQzyvqfns-unsplash%201.jpg" alt="Kameron Clein holding a planner and a phone">
-                <h3>Kameron Clein</h3>
-                <dl>
-                    <dt>From</dt>
-                    <dd>Be more flower</dd>
-                    <dt>Skills</dt>
-                    <dd>Design Strategy, Marketing</dd>
-                </dl>
-            </article>
-        </section>
-        
+      <section id="Testimonials">
+        <header class="roboto-bold">
+          <h3>Testimonials</h3>
+        </header>
+        <figure>
+          <img
+            src="img/keghan-crossland-ZZxmc66SjfM-unsplash%201.jpg"
+            alt="Spacious cafe interior with natural lighting and a menu board in the background"
+          />
+        </figure>
+        <dl class="roboto-bold">
+          <dt>Website</dt>
+          <dd><a href="https://www.whitepapers.com">www.whitepapers.com</a></dd>
+          <dt>Creativity</dt>
+          <dd><a href="https://www.whitepapers.com">www.whitepapers.com</a></dd>
+          <dt>Creativity</dt>
+          <dd><a href="https://www.whitepapers.com">www.whitepapers.com</a></dd>
+        </dl>
+        <blockquote class="bitter-regular testimonials-quote-text">
+          I just really want to do good work and work with some great people,
+          people who challenge me.
+        </blockquote>
+        <figure>
+          <img
+            src="img/sinitta-leunen-YaReHIzNdRw-unsplash%201.jpg"
+            alt="Person holding a string bag with visible items inside, walking on a brick pavement"
+          />
+        </figure>
+      </section>
 
-        <section id="Testimonials">
-            <h2>Testimonials</h2>
-            <figure>
-                <img src="img/keghan-crossland-ZZxmc66SjfM-unsplash%201.jpg" alt="Spacious cafe interior with natural lighting and a menu board in the background">
-            </figure>
-            <dl>
-                <dt>Website</dt>
-                <dd><a href="https://www.whitepapers.com">www.whitepapers.com</a></dd>
-                <dt>Creativity</dt>
-                <dd><a href="https://www.whitepapers.com">www.whitepapers.com</a></dd>
-            </dl>
-            <blockquote>
-                "I just really want to do good work and work with some great people, people who challenge me."
-            </blockquote>
-            <figure>
-                <img src="img/sinitta-leunen-YaReHIzNdRw-unsplash%201.jpg" alt="Person holding a string bag with visible items inside, walking on a brick pavement">
-            </figure>
-        </section>
-        
-
-        <section id="StrongPoints">
-            <h2>Strengths</h2>
-            <figure>
-                <img src="img/dawid-liberadzki-vPFbVB7DPZI-unsplash%201.jpg" alt="Modern workspace with laptop, lamp, and plant">
-                <img src="img/avery-klein-JaXs8Tk5Iww-unsplash%201.jpg" alt="Cozy armchair by a wooden side table">
-                <img src="img/keghan-crossland-ZZxmc66SjfM-unsplash%201.jpg" alt="Bright cafe interior with patrons and a barista at the counter">
-            </figure>
-            <ul>
-                <li>Interiors</li>
-                <li>Outdoors</li>
-                <li>Portraits</li>
-                <li>Styling</li>
-                <li>Events</li>
-                <li>Architecture</li>
-                <li>Design</li>
-                <li>Celebrations</li>
-                <li>Fashion</li>
-                <li>Nature</li>
-            </ul>
-        </section>
-        
+      <section id="StrongPoints">
+        <header class="roboto-bold">
+          <h3>Strong points</h3>
+        </header>
+        <h2>Strengths</h2>
+        <figure>
+          <img
+            src="img/dawid-liberadzki-vPFbVB7DPZI-unsplash%201.jpg"
+            alt="Modern workspace with laptop, lamp, and plant"
+          />
+          <img
+            src="img/avery-klein-JaXs8Tk5Iww-unsplash%201.jpg"
+            alt="Cozy armchair by a wooden side table"
+          />
+          <img
+            src="img/keghan-crossland-ZZxmc66SjfM-unsplash%201.jpg"
+            alt="Bright cafe interior with patrons and a barista at the counter"
+          />
+        </figure>
+        <ul class="bitter-regular">
+          <li>Interiors</li>
+          <li>Outdoors</li>
+          <li>Portraits</li>
+          <li>Styling</li>
+          <li>Events</li>
+          <li>Architecture</li>
+          <li>Design</li>
+          <li>Celebrations</li>
+          <li>Fashion</li>
+          <li>Nature</li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <address>
-            <a href="tel:+79211234567">+7 921 123-45-67</a><br>
-            <a href="mailto:info@modstudio.com">info@modstudio.com</a>
-        </address>
-        <p>A product of MOD</p>
-        <p>© 2023 Mod Media. All rights reserved</p>
+      <address class="roboto-regular contact-text">
+        <a href="tel:+79211234567">+7 921 123-45-67</a><br />
+        <a href="mailto:info@modstudio.com">info@modstudio.com</a>
+      </address>
+      <p class="roboto-medium">
+        A product of <span class="roboto-black">MOD</span>
+      </p>
+      <p class="roboto-regular">© 2023 Mod Media. All rights reserved</p>
     </footer>
-
-</body>
+  </body>
 </html>
