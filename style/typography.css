@@ -1,0 +1,110 @@
+@font-face {
+  font-family: PlayfairDisplay, serif;
+  src: url("../fonts/PlayfairDisplay-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PlayfairDisplay, serif;
+  src: url("../fonts/PlayfairDisplay-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bitter, serif;
+  src: url("../fonts/Bitter-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --bitter-font-family: "Bitter", serif;
+  --playfair-font-family: "Playfair Display", serif;
+}
+
+.roboto-regular {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1rem;
+  /* text-align: right;
+      color: #fff; */
+}
+
+.roboto-medium {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.125rem;
+  /* text-align: center; */
+  /* color: #fff; */
+}
+.roboto-medium > li {
+    font-size: 1.5rem;
+  }
+.roboto-medium > p {
+  font-size: 1.25rem;
+}
+
+.roboto-bold {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.roboto-bold > h3 {
+  font-size: 1.5rem;
+}
+.roboto-bold > article > dl > dd {
+  font-weight: 400;
+}
+.roboto-bold > dd {
+  font-weight: 400;
+}
+
+.roboto-black {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.bitter-regular {
+  font-family: var(--bitter-font-family);
+  font-weight: 400;
+  font-size: 2.125rem;
+}
+.bitter-regular > blockquote {
+  font-size: 1.625rem;
+}
+
+.playfair-regular {
+  font-family: var(--playfair-font-family);
+  font-weight: 400;
+  /* font-size: 2rem; */
+}
+
+/* .playfair-medium,  */
+h1,
+h2 {
+  font-family: var(--playfair-font-family);
+  font-size: 5.375rem;
+}
+h1 {
+  font-weight: 600;
+}
+h2 {
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .bitter-light {
+    font-family: var(--bitter-font-family);
+    font-weight: 300; /* Light is typically 300 weight */
+  }
+
+  .bitter-bold {
+    font-family: var(--bitter-font-family);
+    font-weight: 700; /* Bold is typically 700 weight */
+  }
+}
