@@ -29,16 +29,12 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 1rem;
-  /* text-align: right;
-      color: #fff; */
 }
 
 .roboto-medium {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 1.125rem;
-  /* text-align: center; */
-  /* color: #fff; */
 }
 .roboto-medium > li {
     font-size: 1.5rem;
@@ -75,12 +71,6 @@
 }
 .bitter-regular > blockquote {
   font-size: 1.625rem;
-}
-
-.playfair-regular {
-  font-family: var(--playfair-font-family);
-  font-weight: 400;
-  /* font-size: 2rem; */
 }
 
 /* .playfair-medium,  */
