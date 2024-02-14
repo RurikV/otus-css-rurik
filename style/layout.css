@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+/* Site Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem;
+  height: 8.4375rem;
+}
+
+.site-navigation {
+  display: flex; /* Aligns navigation items horizontally */
+  gap: 3.438rem; /* Space between navigation items */
+}
+
+.site-navigation > li > a {
+  text-decoration: none; /* Removes underline from links */
+  padding: 0.5rem 0; /* Adds padding for clickable area */
+  color: #000; /* Sets text color to black */
+}
+
+.site-navigation > li > a:hover {
+  text-decoration: underline; /* Ensures underline does appear on hover */
+}
+
+/* Promotional Section */
+.promo-section {
+  display: flex;
+  align-items: center;
+  min-height: 39.375rem; /* 630px / 16px */
+  padding: 5.625rem; /* 90px / 16px */
+  background: url("../img/inside-weather-Uxqlfigh6oE-unsplash%201.jpg")
+    no-repeat center/cover; /* relative path to image ? */
+}
+
+.promo-content {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 6.875rem; /* 110px / 16px */
+  min-width: 43.125rem; /* 690px / 16px */
+  min-height: 22.5rem; /* 360px / 16px */
+  text-align: center;
+  line-height: 1.2;
+}
