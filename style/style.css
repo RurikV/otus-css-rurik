@@ -1,3 +1,7 @@
+ul {
+  list-style-type: none;
+}
+
 .biography-text-color {
     color: #0d0d0d; 
 }
