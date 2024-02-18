@@ -29,8 +29,8 @@
 
 
 .testimonial-image {
-  width: 451px;
-  height: 760px;
+  max-width: 451px;
+  /* height: 760px; */
 }
 
 .testimonial-quote-and-image {
