@@ -1,13 +1,23 @@
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 9.375rem; /* 150px / 16px */
+}
+
+.site-navigation > li > a,
+.testimonial-caption-with-links > div > dd > a {
+  text-decoration: none; /* Removes underline from links */
+  /*padding: 0.5rem 0; /* Adds padding for clickable area */ /*TODO*/
+  color: #000; /* Sets text color to black */
+}
+
 ul {
   list-style-type: none;
 }
 
 .biography-text-color {
     color: #0d0d0d; 
-}
-
-.testimonials-quote-text {
-  font-size: 2rem;
 }
 
 .contact-text {

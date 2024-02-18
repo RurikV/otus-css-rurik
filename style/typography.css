@@ -27,12 +27,11 @@
   font-weight: 700;
   font-size: 1rem;
 }
-.roboto-bold > header > h3 {
+.roboto-bold > h3 {
   font-size: 1.5rem;
 }
-.roboto-bold > article > dl > dd {
-  font-weight: 400;
-}
+.roboto-bold > article > dl > dd, 
+.roboto-bold > div > dd,
 .roboto-bold > dd {
   font-weight: 400;
 }
