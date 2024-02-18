@@ -29,7 +29,7 @@
 
 
 .testimonial-image {
-  max-width: 451px;
+  min-width: 451px;
   /* height: 760px; */
 }
 

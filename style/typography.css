@@ -30,7 +30,7 @@
 .roboto-bold > h3 {
   font-size: 1.5rem;
 }
-.roboto-bold > article > dl > dd, 
+.roboto-bold > div > article > dl > dd, 
 .roboto-bold > div > dd,
 .roboto-bold > dd {
   font-weight: 400;

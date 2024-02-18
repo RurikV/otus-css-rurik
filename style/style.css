@@ -24,3 +24,18 @@ ul {
   line-height: 1.625;
   text-transform: uppercase;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 0 0.2rem;
+  /* grid-template-areas: "a a a" "b c c" "b c c"; */
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
