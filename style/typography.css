@@ -1,24 +1,3 @@
-@font-face {
-  font-family: PlayfairDisplay, serif;
-  src: url("../fonts/PlayfairDisplay-Medium.ttf") format("ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: PlayfairDisplay, serif;
-  src: url("../fonts/PlayfairDisplay-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Bitter, serif;
-  src: url("../fonts/Bitter-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --font-family: "Roboto", sans-serif;
   --bitter-font-family: "Bitter", serif;
@@ -40,7 +19,7 @@
     font-size: 1.5rem;
   }
 .roboto-medium > p {
-  font-size: 1.25rem;
+  font-size: 1.125rem; /* 18px / 16px */
 }
 
 .roboto-bold {
@@ -51,9 +30,8 @@
 .roboto-bold > h3 {
   font-size: 1.5rem;
 }
-.roboto-bold > article > dl > dd {
-  font-weight: 400;
-}
+.roboto-bold > div > article > dl > dd, 
+.roboto-bold > div > dd,
 .roboto-bold > dd {
   font-weight: 400;
 }
@@ -73,7 +51,7 @@
   font-size: 1.625rem;
 }
 
-/* .playfair-medium,  */
+.playfair-medium,
 h1,
 h2 {
   font-family: var(--playfair-font-family);

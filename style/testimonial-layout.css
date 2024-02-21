@@ -1,0 +1,58 @@
+.testimonial-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  grid-template-rows: auto; /* Rows will adjust based on content */
+  justify-content: space-around;
+  gap: 1.25rem; /* 20px / 16px */
+  padding-left: 7.375rem; /* 118px / 16px */
+  padding-right: 7.375rem; /* 118px / 16px */
+}
+
+.testimonial-caption-with-links {
+  writing-mode: tb;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 4.375rem; /* 70px / 16px */
+  padding: 1.25rem; /* 20px / 16px */
+}
+
+.testimonial-caption-header {
+  writing-mode: tb;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.testimonial-image {
+  min-width: 451px;
+  /* height: 760px; */
+}
+
+.testimonial-quote-and-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.53125rem; /* 40.5px / 16px */
+}
+
+.testimonial-quote-and-image > img {
+  width: 221px;
+  height: 333px;
+}
+
+.testimonial-quote-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+}
