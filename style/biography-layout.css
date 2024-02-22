@@ -1,6 +1,6 @@
 .biography-section {
   display: flex;
-  justify-content: space-around; /* Space out vertically */
+  justify-content: center;
   position: relative; /* Establish relative positioning for the biography text header */
   gap: 7.3125rem; /* 139px / 16px */
 }
