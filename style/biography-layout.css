@@ -1,8 +1,9 @@
 .biography-section {
-    display: flex;
-    justify-content: space-around; /* Space out vertically */
-    position: relative; /* Establish relative positioning for the biography text header */
-  }
+  display: flex;
+  justify-content: center;
+  position: relative; /* Establish relative positioning for the biography text header */
+  gap: 7.3125rem; /* 139px / 16px */
+}
 .biography-text {
   transform: rotate(-90deg);
   padding-right: 5rem;
@@ -12,9 +13,13 @@
 
 .image-with-caption {
   display: flex; /* Establishes a flex container */
-  align-items: flex-start; 
+  align-items: flex-start;
   max-width: 35.6875rem; /* 571px / 16px */
 }
+.image-with-caption img {
+  object-fit: contain; /* Prevents the image from stretching */
+}
+
 .biography-article {
   display: flex;
   flex-direction: column; /* Stacks the children vertically */
