@@ -1,0 +1,14 @@
+.site-footer {
+    background-color: #0D0D0D;
+    color: #ffffff;
+    padding: 4.375rem 1.25rem; /* 70px / 16px and 20px / 16px */
+}
+
+.contact-text > a { 
+    color: #ffffff;
+    text-decoration: underline;
+    /* text-decoration-skip-ink: none; */
+    text-decoration-color: gray;
+    text-decoration-thickness: 2px;
+    font-style: normal;
+}

@@ -1,6 +1,8 @@
 :root {
     --strong-point-section-gap: 1.25rem; /* 20px / 16px */
     --strong-point-image-width: 335px;
+    --strong-point-strengths-width: 451px;
+    --strong-point-img-height: 555px;
   }
 
 .strong-point-section {
@@ -11,7 +13,7 @@
 @supports (display: grid) {
   .strong-point-section {
     display: grid;
-    grid-template-columns: repeat(2, var(--strong-point-image-width)) 451px var(--strong-point-image-width);
+    grid-template-columns: repeat(2, var(--strong-point-image-width)) var(--strong-point-strengths-width) var(--strong-point-image-width);
     column-gap: var(--strong-point-section-gap)
   }
 }
@@ -28,7 +30,7 @@
     }
 
     .strong-point-strengths {
-        flex-basis: 451px;
+        flex-basis: var(--strong-point-strengths-width);
         margin-right: var(--strong-point-section-gap)
     }
 
@@ -54,5 +56,5 @@
 
 .strong-point-image img {
   width: var(--strong-point-image-width);
-  height: 555px;
+  height: var(--strong-point-img-height);
 }
