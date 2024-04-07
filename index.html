@@ -7,25 +7,32 @@
     <title>Mod Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
-    <!-- <link href="style/fonts.css" rel="stylesheet" /> -->
+    /> -->
+    <link href="style/fonts.css" rel="stylesheet" />
     <!-- /*TODO*/ -->
     <link href="style/typography.css" rel="stylesheet" />
+    <link href="style/data-attributes.css" rel="stylesheet" />
     <link href="style/layout.css" rel="stylesheet" />
     <link href="style/biography-layout.css" rel="stylesheet" />
     <link href="style/designer-layout.css" rel="stylesheet" />
     <link href="style/testimonial-layout.css" rel="stylesheet" />
     <link href="style/strong-point-layout.css" rel="stylesheet" />
     <link href="style/style.css" rel="stylesheet" />
+    <link href="style/footer.css" rel="stylesheet" />
+    <link href="style/media-screens.css" rel="stylesheet" />
   </head>
   <body>
     <header class="site-header">
       <h1>Mod</h1>
       <nav>
-        <ul class="roboto-medium site-navigation">
+        <ul
+          class="roboto-medium site-navigation"
+          data-inline-cluster
+          style="--gutter: 3.438rem"
+        >
           <li><a href="#Biography">Biography</a></li>
           <li><a href="#Designers">Designers</a></li>
           <li><a href="#Testimonials">Testimonials</a></li>
@@ -47,17 +54,25 @@
       <section id="Biography" class="biography-section">
         <figure class="image-with-caption">
           <img
+            class="biography-image-desktop"
             src="img/jared-weiss-P3cB0ynqYBw-unsplash%201.jpg"
             alt="Katya Mills walking across a desert landscape"
             width="100%"
             height="840"
           />
-          <figcaption class="roboto-bold biography-header">
-            <h3 class="biography-text">Biography</h3>
-          </figcaption>
+          <img
+            class="biography-image-mobile"
+            src="img/jared-weiss-P3cB0ynqYBw-unsplash%202.png"
+            alt="Katya Mills walking across a desert landscape"
+            width="100%"
+            height="400"
+          />
         </figure>
+        <figcaption class="roboto-bold biography-header">
+          <h3 class="biography-text">Biography</h3>
+        </figcaption>
         <article class="biography-text-color biography-article">
-          <header class="biography-block">
+          <header class="biography-block biography-article-header">
             <h2>
               Katya<br />
               Mills
@@ -65,7 +80,16 @@
           </header>
           <div class="roboto-medium biography-block">
             <p>Art Director</p>
-            <p>Scenography / Styling / Creative Photography / Design</p>
+            <figcaption class="roboto-bold biography-block-flex-mobile">
+              <p class="roboto-medium">Art Director</p>
+              <h3>Biography</h3>
+            </figcaption>
+            <ul>
+              <li>Scenography</li>
+              <li>Styling</li>
+              <li>Creative Photography</li>
+              <li>Design</li>
+            </ul>
           </div>
           <div class="bitter-regular biography-block">
             <blockquote>
@@ -84,10 +108,18 @@
         <div class="designer-section-articles">
           <article>
             <img
+              class="designer-image-desktop"
               src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.jpg"
               alt="Jess Wonder gazing into the distance with cloudy skies in the background"
               width="572"
               height="538"
+            />
+            <img
+              class="designer-image-mobile"
+              src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.png"
+              alt="Jess Wonder gazing into the distance with cloudy skies in the background"
+              width="310"
+              height="440"
             />
             <h4>JESS WONDER</h4>
             <dl>
@@ -153,7 +185,7 @@
               <a href="https://www.whitepapers.com">www.whitepapers.com</a>
             </dd>
           </div>
-          <div>
+          <div class="testimonial-caption-with-links-website">
             <dt>Website</dt>
             <dd>
               <a href="https://www.whitepapers.com">www.whitepapers.com</a>
@@ -182,8 +214,12 @@
             who challenge<br />
             me.
           </blockquote>
-          <img
+          <img class="testimonial-image-bag-desktop"
             src="img/sinitta-leunen-YaReHIzNdRw-unsplash%201.jpg"
+            alt="Person holding a string bag with visible items inside, walking on a brick pavement"
+          />
+          <img class="testimonial-image-bag-mobile"
+            src="img/sinitta-leunen-YaReHIzNdRw-unsplash%202.png"
             alt="Person holding a string bag with visible items inside, walking on a brick pavement"
           />
         </figure>
@@ -231,7 +267,14 @@
         </div>
       </section>
 
-      <footer class="site-footer">
+      <nav class="mobile-menu bitter-medium">
+        <a class="mobile-menu__link" href="#Biography">B</a>
+        <a class="mobile-menu__link" href="#Designers">D</a>
+        <a class="mobile-menu__link" href="#Testimonials">T</a>
+        <a class="mobile-menu__link" href="#StrongPoints">S</a>
+      </nav>
+
+      <footer data-inline-cluster="justify:space-between" class="site-footer">
         <address class="roboto-regular contact-text">
           <a href="tel:+79211234567">+7 921 123-45-67</a><br />
           <a href="mailto:info@modstudio.com">info@modstudio.com</a>
