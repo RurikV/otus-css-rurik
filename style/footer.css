@@ -2,11 +2,6 @@
   background-color: #0D0D0D;
   color: #ffffff;
   padding: 4.375rem 1.25rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
 .site-footer .contact-text a {
   color: inherit;

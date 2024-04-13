@@ -1,0 +1,32 @@
+[data-inline-cluster] {
+  --gutter: initial;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gutter, 0px);
+  align-items: center;
+}
+[data-inline-cluster][data-inline-cluster~="justify:center"] {
+  justify-content: center;
+}
+[data-inline-cluster][data-inline-cluster~="justify:start"] {
+  justify-content: flex-start;
+}
+[data-inline-cluster][data-inline-cluster~="justify:end"] {
+  justify-content: flex-end;
+}
+[data-inline-cluster][data-inline-cluster~="justify:space-between"] {
+  justify-content: space-between;
+}
+[data-inline-cluster][data-inline-cluster~="align:start"] {
+  align-items: flex-start;
+}
+[data-inline-cluster][data-inline-cluster~="align:center"] {
+  align-items: center;
+}
+[data-inline-cluster][data-inline-cluster~="align:end"] {
+  align-items: flex-end;
+}
+[data-inline-cluster][data-inline-cluster~="align:stretch"] {
+  align-items: stretch;
+}/*# sourceMappingURL=data-attributes.css.map */
