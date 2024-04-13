@@ -1,0 +1,43 @@
+$gap-standard: 1.25rem; // 20px / 16px
+$padding-large: 15.25rem;
+$margin-article: 1.25rem; // 20px / 16px
+$padding-top-h4: 1.45rem; // 23.2px / 16px
+$margin-left-h3: 7.1875rem; // 139px / 16px
+$margin-bottom-h3: 1.875rem; // 30px / 16px
+
+.designer-section {
+  h3 {
+    margin-left: $margin-left-h3;
+    margin-bottom: $margin-bottom-h3;
+  }
+
+  &-articles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: $gap-standard;
+    overflow-x: auto;
+
+    article {
+      &:first-child {
+        margin-left: $margin-article;
+
+        :is(h4, dl) {
+          padding-left: $padding-large;
+        }
+
+        > h4 {
+          padding-top: $padding-top-h4;
+        }
+      }
+    }
+  }
+}
+
+.designer-image-desktop {
+  display: block;
+}
+
+.designer-image-mobile {
+  display: none;
+}

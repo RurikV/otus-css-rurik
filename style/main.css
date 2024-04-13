@@ -1,0 +1,39 @@
+ul {
+  list-style-type: none;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 9.375rem;
+}
+
+.site-navigation li a,
+.site-navigation div a,
+.testimonial-caption-with-links li a,
+.testimonial-caption-with-links div a {
+  text-decoration: none;
+  color: #000;
+}
+
+.biography-text-color {
+  color: #0d0d0d;
+}
+
+.contact-text {
+  line-height: 1.625;
+  text-transform: uppercase;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 0 0.2rem;
+}
+dl dt {
+  grid-column-start: 1;
+}
+dl dd {
+  grid-column-start: 2;
+}/*# sourceMappingURL=main.css.map */

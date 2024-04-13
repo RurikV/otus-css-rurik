@@ -43,8 +43,9 @@
 }
 
 .testimonial-quote-and-image > img {
-  width: 221px;
-  height: 333px;
+  /* width: 221px; */
+  max-width: 100%;
+  /* height: 333px; */
 }
 
 .testimonial-quote-text {

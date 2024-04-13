@@ -5,11 +5,9 @@
   gap: 3.655rem; /* 58.48px / 16px */
   /*gap: 7.3125rem; /* 139px / 16px */
 }
-
 .biography-block-flex-mobile {
   display: none; /* Hide the flex container */
 }
-
 .biography-text {
   transform: rotate(-90deg);
   padding-right: 5rem;
@@ -22,14 +20,11 @@
   align-items: flex-start; */
   max-width: 35.6875rem; /* 571px / 16px */
 }
-
 .image-with-caption img {
   height: 100%; /* Ensures the image takes the full height of the container */
   width: 100%; /* Ensures the image takes the full width of the container */
-  -o-object-fit: contain;
-     object-fit: contain; /* Prevents the image from stretching */
+  object-fit: contain; /* Prevents the image from stretching */
 }
-
 .biography-image-mobile {
   display: none; /* Hide the image on mobile */
 }
@@ -39,7 +34,6 @@
   flex-direction: column; /* Stacks the children vertically */
   justify-content: center;
 }
-
 .rectangle {
   width: 1.25rem; /* 20px / 16px */
   height: 0.375rem; /* 6px / 16px */
@@ -58,11 +52,11 @@
   padding: 0; /* Remove the default padding */
 }
 
-.biography-block li {
+.biography-block li { 
   margin-right: 0.625rem; /* 10px / 16px */
 }
 
 .biography-block li:not(:last-child)::after {
   content: "/"; /* Add a slash after each item */
   margin-left: 0.625rem; /* 10px / 16px */
-}/*# sourceMappingURL=biography-layout.css.map */
+}

@@ -1,0 +1,17 @@
+.promo-section {
+  display: flex;
+  align-items: center;
+  min-height: 39.375rem;
+  padding: 5.625rem 0;
+  background: url("../img/inside-weather-Uxqlfigh6oE-unsplash%201.jpg") no-repeat left/cover;
+}
+
+.promo-content {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 6.875rem 0;
+  min-width: 43.125rem;
+  min-height: 22.5rem;
+  text-align: center;
+  line-height: 1.2;
+}/*# sourceMappingURL=promo.css.map */

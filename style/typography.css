@@ -1,32 +1,26 @@
-:root {
-  --font-family: "Roboto", sans-serif;
-  --bitter-font-family: "Bitter", serif;
-  --playfair-font-family: "Playfair Display", serif;
-}
-
 .roboto-regular {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
 .roboto-medium {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
 }
 .roboto-medium > li {
-  font-size: 1.5rem; /* 24px / 16px */
+  font-size: 1.5rem;
 }
 .roboto-medium > header > p {
-  font-size: 1.25rem; /* 20px / 16px */
+  font-size: 1.25rem;
 }
 .roboto-medium > p {
-  font-size: 1.125rem; /* 18px / 16px */
+  font-size: 1.125rem;
 }
 
 .roboto-bold {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1rem;
 }
@@ -40,15 +34,15 @@
 }
 
 .roboto-black {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
 }
 
 .bitter-regular {
-  font-family: var(--bitter-font-family);
+  font-family: "Bitter", serif;
   font-weight: 400;
-  font-size: 2.125rem; /* 34px / 16px */
+  font-size: 2.125rem;
 }
 .bitter-regular > blockquote {
   font-size: 1.625rem;
@@ -57,54 +51,53 @@
 .playfair-medium,
 h1,
 h2 {
-  font-family: var(--playfair-font-family);
-  font-size: 5.375rem; /* 86px / 16px */
+  font-family: "Playfair Display", serif;
+  font-size: 5.375rem;
+  font-weight: 500;
 }
+
 h1 {
   font-weight: 600;
 }
+
 h2 {
   font-weight: 500;
 }
 
-/* Tablet and Mobile */
 @media screen and (max-width: 767px) {
   .roboto-medium > header > h2 {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 4.375rem; /* 70px / 16px */
+    font-size: 4.375rem;
   }
   .roboto-medium > header > p {
-    font-size: 1.125rem; /* 18px / 16px */
+    font-size: 1.125rem;
   }
-
   .roboto-bold > h3 {
-    font-size: 1.125rem; /* 18px / 16px */
+    font-size: 1.125rem;
   }
-
+  .bitter-regular {
+    font-family: "Bitter", serif;
+    font-weight: 300;
+    font-size: 1.875rem;
+  }
   .bitter-regular > li {
-    font-size: 1.5rem; /* 24px / 16px */
+    font-size: 1.5rem;
     line-height: 1.5;
   }
-  
-  .bitter-regular {
-    font-family: var(--bitter-font-family);
-    font-weight: 300;
-    font-size: 1.875rem; /* 30px / 16px */
-  }
-
   .playfair-medium,
   h1,
   h2 {
-    font-size: 4rem; /* 64px / 16px */
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
     font-weight: 400;
   }
   .strong-point-strengths > h2 {
-    font-size: 2.875rem; /* 46px / 16px */
+    font-size: 2.875rem;
   }
-  /* Mobile menu specific */
   .bitter-medium {
-    font-family: var(--bitter-font-family);
+    font-family: "Bitter", serif;
     font-weight: 400;
-    font-size: 2.5rem; /* 40px / 16px */
+    font-size: 2.5rem;
   }
-}
+}/*# sourceMappingURL=typography.css.map */

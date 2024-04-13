@@ -1,0 +1,21 @@
+
+// Site Header
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem; // 30px
+  height: 8.4375rem; // 135px
+}
+
+// Site Navigation
+.site-navigation {
+  li {
+    a {
+      &:hover {
+        text-decoration: underline; // Only underline on hover
+      }
+    }
+  }
+}
+

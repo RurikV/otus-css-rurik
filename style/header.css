@@ -1,0 +1,11 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem;
+  height: 8.4375rem;
+}
+
+.site-navigation li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=header.css.map */
