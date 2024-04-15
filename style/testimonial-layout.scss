@@ -4,8 +4,7 @@
   /* grid-column: 2 / 4; */
   grid-template-rows: auto; /* Rows will adjust based on content */
   justify-content: center;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem; /* 20px / 16px */
+  column-gap: 1.25rem; /* 20px / 16px */
 }
 
 .testimonial-caption-with-links {
@@ -27,14 +26,12 @@
   align-items: flex-end;
 }
 
-.testimonial-image {
+.testimonial-image{
   max-width: 451px;
   /* height: 760px; */
 }
-
 .testimonial-image img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .testimonial-quote-and-image {
@@ -60,7 +57,6 @@
 .testimonial-image-bag-desktop {
   display: block;
 }
-
 .testimonial-image-bag-mobile {
   display: none;
-}/*# sourceMappingURL=testimonial-layout.css.map */
+}
