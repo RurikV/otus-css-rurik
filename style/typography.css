@@ -2,21 +2,23 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  /* 16px / 16px */
 }
 
 .roboto-medium {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
+  /* 18px / 16px */
 }
 .roboto-medium > li {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 24px / 16px */
 }
 .roboto-medium > header > p {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* 20px / 16px */
 }
 .roboto-medium > p {
-  font-size: 1.125rem;
+  font-size: 1.125rem; /* 18px / 16px */
 }
 
 .roboto-bold {
@@ -25,7 +27,7 @@
   font-size: 1rem;
 }
 .roboto-bold > h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 24px / 16px */
 }
 .roboto-bold > div > article > dl > dd,
 .roboto-bold > div > dd,

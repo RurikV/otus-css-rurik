@@ -32,13 +32,37 @@
             </label>
             <input type="checkbox" id="message-popup" class="modal__trigger"/>
             <dialog class="modal">
-              <h2 class="roboto-bold modal__title">Get in touch</h2>
-              <p class="roboto-regular modal__content">Do you have any questions? Have something to say?
-                Don't be shy, write to us:</p>
-              <footer class="modal__footer">
-                <label for="message-popup" class="modal__close">Cancel</label>
-              </footer>
-            </dialog>
+              <form class="modal-form">
+                  <header class="roboto-bold">
+                      <h3>Get in touch</h3>
+                  </header>
+                  <label class="roboto-regular modal-form__element">
+                    Do you have any questions? Have something to say?<br />
+                    Don't be shy, write to us:
+                  </label>
+          
+                  <label class="modal-form__element">
+                      Name
+                      <input type="text" name="name" placeholder="3+ Characters" required
+                             minlength="3" autofocus>
+                  </label>
+          
+                  <label class="modal-form__element">
+                      Email
+                      <input type="email" name="email" placeholder="name@email.com" required>
+                  </label>
+          
+                  <label class="modal-form__element">
+                      Comment
+                      <textarea rows="5" name="comment" placeholder="Some text..."></textarea>
+                  </label>
+          
+                  <div class="modal-form__buttons">
+                      <button class="modal__close" type="button">Cancel</button>
+                      <button type="submit">Send</button>
+                  </div>
+              </form>
+          </dialog>
           </li>
         </ul>
       </nav>
