@@ -2,27 +2,19 @@
   margin-left: 7.1875rem;
   margin-bottom: 1.875rem;
 }
-.designer-section-articles {
+.designer-section__articles {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   gap: 1.25rem;
   overflow-x: auto;
 }
-.designer-section-articles article:first-child {
+.designer-section__articles article:first-child {
   margin-left: 1.25rem;
 }
-.designer-section-articles article:first-child :is(h4, dl) {
+.designer-section__articles article:first-child :is(h4, dl) {
   padding-left: 15.25rem;
 }
-.designer-section-articles article:first-child > h4 {
+.designer-section__articles article:first-child > h4 {
   padding-top: 0.45rem;
-}
-
-.designer-image-desktop {
-  display: block;
-}
-
-.designer-image-mobile {
-  display: none;
 }/*# sourceMappingURL=designer-layout.css.map */

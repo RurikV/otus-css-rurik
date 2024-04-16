@@ -1,11 +1,11 @@
 /* 20px / 16px */
-.strong-point-section {
+.strong-point-section__points {
   margin-left: 1.25rem;
   overflow-x: auto;
 }
 
 @supports (display: grid) {
-  .strong-point-section {
+  .strong-point-section__points {
     display: grid;
     grid-template-columns: repeat(2, 335px) 451px 335px;
     -moz-column-gap: 1.25rem;
@@ -13,20 +13,20 @@
   }
 }
 @supports not (display: grid) {
-  .strong-point-section {
+  .strong-point-section__points {
     display: flex; /* Activate flexbox if grid isn't supported  */
     margin-right: 1.25rem;
   }
-  .strong-point-image {
+  .strong-point-section__points_image {
     flex-basis: 335px;
     margin-right: 1.25rem;
   }
-  .strong-point-strengths {
+  .strong-point-section__points_strengths {
     flex-basis: 451px;
     margin-right: 1.25rem;
   }
 }
-.strong-point-strengths {
+.strong-point-section__points_strengths {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,16 +35,16 @@
   padding-bottom: 1.125rem;
 }
 
-.strong-point-strengths > h2 {
+.strong-point-section__points_strengths > h2 {
   line-height: 1;
 }
 
-.strong-point-section-with-header > h3 {
+.strong-point-section > h3 {
   margin-left: 16.125rem; /* 258px / 16px */
   margin-bottom: 1.875rem; /* 30px / 16px */
 }
 
-.strong-point-image img {
+.strong-point-section__points_image img {
   width: 335px;
   height: 555px;
 }/*# sourceMappingURL=strong-point-layout.css.map */

@@ -18,7 +18,7 @@
     background: url("../img/inside-weather-Uxqlfigh6oE-unsplash%202.png")
       no-repeat left/cover;
   }
-  .promo-content {
+  .promo-section__content {
     width: 100%; /* Take full width of the container */
     min-width: 0; /* Override the min-width from the desktop styles */
     min-height: 21.5rem; /* 344px / 16px */
@@ -31,7 +31,7 @@
     gap: 1.25rem; /* 20px / 16px */
   }
 
-  .biography-block-flex-mobile {
+  .biography-section__article-block-flex-mobile {
     display: flex;
     justify-content: space-between;
   }
@@ -41,34 +41,29 @@
     order: 5;
   }
 
-  .biography-block > p,
-  .biography-header,
-  .biography-image-desktop {
+  .biography-section__article-block > p,
+  .biography-section__header {
     display: none;
   }
 
-  .biography-image-mobile {
-    display: block;
-  }
-
-  .biography-block > h2::before {
+  .biography-section__article-block > h2::before {
     content: "-";
   }
 
-  .biography-article-header {
+  .biography-section__article-header {
     order: 4;
     br {
       content: " ";
     }
   }
 
-  .biography-block > ul {
+  .biography-section__article-block > ul {
     display: block;
     list-style: "- ";
     padding: 0 1rem; /* 10px / 16px */
   }
 
-  .biography-block li:not(:last-child)::after {
+  .biography-section__article-block li:not(:last-child)::after {
     content: none;
   }
 
@@ -76,34 +71,27 @@
     visibility: hidden;
   }
 
-  .designer-image-desktop {
-    display: none;
-  }
-  .designer-image-mobile {
-    display: block;
-  }
-
   .designer-section > h3 {
     margin-left: 1rem;
   }
 
-  .designer-section-articles {
+  .designer-section__articles {
     gap: 1rem; /* 16px / 16px */
   }
 
-  .designer-section-articles article:first-child {
+  .designer-section__articles article:first-child {
     margin-left: 1rem; /* 16px / 16px */
   }
   
-  .designer-section-articles article:first-child h4 {
+  .designer-section__articles article:first-child h4 {
     padding-top: 1.25rem; /* 20px / 16px */
   }
 
-  .designer-section-articles article:first-child :is(h4, dl) {
+  .designer-section__articles article:first-child :is(h4, dl) {
       padding-left: 1rem;
   }
 
-  .designer-section-articles article > h4 {
+  .designer-section__articles article > h4 {
       padding-top: 1rem; /* 16px / 16px */
   }
 
@@ -113,7 +101,7 @@
     gap: 1rem; /* 16px / 16px */
     overflow-x: auto;
   }
-  .testimonial-caption-with-links {
+  .testimonial-section__caption-with-links {
     order: 5;
     writing-mode: lr;
     transform: rotate(0deg);
@@ -121,51 +109,46 @@
     justify-content: flex-start;
     gap: 1.775rem; /* 28.4px / 16px */
   }
-  .testimonial-caption-with-links-website {
+  .testimonial-section__caption-with-links_website {
     order: -1;
   }
-  .testimonial-caption-header {
+  .testimonial-section__caption-header {
     order: -1;
     writing-mode: lr;
     transform: rotate(0deg);
     align-items: flex-end;
     padding-right: 1rem; /* 16px / 16px */
   }
-  .testimonial-quote-text {
+  .testimonial-section__image {
+    display: none;
+  }
+  .testimonial-section__quote-and-image_text {
     max-width: 380px;
     br {
       content: " ";
     }
   }
-  .testimonial-image,
-  .testimonial-image-bag-desktop {
-    display: none;
-  }
-  .testimonial-image-bag-mobile {
-    display: block;
-    min-width: 414px;
-  }
 
-    $strong-point-section-gap: 1rem; /* 16px / 16px */
-    $strong-point-image-width: 310px;
-    $strong-point-strengths-width: 201px;
+    $strong-point-section__points-gap: 1rem; /* 16px / 16px */
+    $strong-point-section__points_image-width: 310px;
+    $strong-point-section__points_strengths-width: 201px;
     $strong-point-img-height: 450px;
 
-  .strong-point-section-with-header > h3 {
+  .strong-point-section > h3 {
     margin-left: 1rem;
   }
 
   @supports (display: grid) {
-    .strong-point-section {
-      grid-template-columns: $strong-point-strengths-width repeat(3, $strong-point-image-width);
-      column-gap: $strong-point-section-gap
+    .strong-point-section__points {
+      grid-template-columns: $strong-point-section__points_strengths-width repeat(3, $strong-point-section__points_image-width);
+      column-gap: $strong-point-section__points-gap
     }
   }
-  .strong-point-image img {
-    width: $strong-point-image-width;
+  .strong-point-section__points_image img {
+    width: $strong-point-section__points_image-width;
     height: $strong-point-img-height;
   }
-  .strong-point-strengths {
+  .strong-point-section__points_strengths {
     order: -1;
     align-items: flex-start;
   }

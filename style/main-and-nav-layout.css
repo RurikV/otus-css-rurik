@@ -11,17 +11,17 @@ ul {
 
 .site-navigation li a,
 .site-navigation div a,
-.testimonial-caption-with-links li a,
-.testimonial-caption-with-links div a {
+.testimonial-section__caption-with-links li a,
+.testimonial-section__caption-with-links div a {
   text-decoration: none;
   color: #000;
 }
 
-.biography-text-color {
+.biography-section__header-text-color {
   color: #0d0d0d;
 }
 
-.contact-text {
+.site-footer__contact-text {
   line-height: 1.625;
   text-transform: uppercase;
 }

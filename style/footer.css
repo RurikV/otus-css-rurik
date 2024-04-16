@@ -3,7 +3,7 @@
   color: #ffffff;
   padding: 4.375rem 1.25rem;
 }
-.site-footer .contact-text a {
+.site-footer .site-footer__contact-text a {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: gray;

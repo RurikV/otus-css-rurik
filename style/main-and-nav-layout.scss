@@ -1,6 +1,6 @@
 // Variables
 $main-font-color: #000;
-$biography-text-color: #0d0d0d;
+$biography-section__header-text-color: #0d0d0d;
 
 // Mixins
 @mixin flex-column-space-between($gap) {
@@ -26,7 +26,7 @@ ul {
 }
 
 .site-navigation,
-.testimonial-caption-with-links {
+.testimonial-section__caption-with-links {
   li,
   div {
     a {
@@ -38,11 +38,11 @@ ul {
   }
 }
 
-.biography-text-color {
-  color: $biography-text-color;
+.biography-section__header-text-color {
+  color: $biography-section__header-text-color;
 }
 
-.contact-text {
+.site-footer__contact-text {
   line-height: 1.625;
   text-transform: uppercase;
 }

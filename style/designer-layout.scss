@@ -11,7 +11,7 @@ $margin-bottom-h3: 1.875rem; // 30px / 16px
     margin-bottom: $margin-bottom-h3;
   }
 
-  &-articles {
+  &__articles {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -32,12 +32,4 @@ $margin-bottom-h3: 1.875rem; // 30px / 16px
       }
     }
   }
-}
-
-.designer-image-desktop {
-  display: block;
-}
-
-.designer-image-mobile {
-  display: none;
 }

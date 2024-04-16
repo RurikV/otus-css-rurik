@@ -1,16 +1,17 @@
 .biography-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   position: relative; /* Establish relative positioning for the biography text header */
   gap: 3.655rem; /* 58.48px / 16px */
   /*gap: 7.3125rem; /* 139px / 16px */
 }
 
-.biography-block-flex-mobile {
+.biography-section__article-block-flex-mobile {
   display: none; /* Hide the flex container */
 }
 
-.biography-text {
+.biography-section__header-text {
   transform: rotate(-90deg);
   padding-right: 5rem;
   margin-left: -7rem;
@@ -30,11 +31,7 @@
      object-fit: contain; /* Prevents the image from stretching */
 }
 
-.biography-image-mobile {
-  display: none; /* Hide the image on mobile */
-}
-
-.biography-article {
+.biography-section__article {
   display: flex;
   flex-direction: column; /* Stacks the children vertically */
   justify-content: center;
@@ -47,22 +44,22 @@
   margin-bottom: 0.75rem; /* 12px / 16px */
 }
 
-.biography-block {
+.biography-section__article-block {
   padding-top: 1.125rem; /* 18px / 16px  */
   padding-bottom: 1.125rem; /* 18px / 16px  */
 }
 
-.biography-block > ul {
+.biography-section__article-block > ul {
   display: flex;
   flex-wrap: wrap; /* Wrap the items to the next line if they exceed the container width */
   padding: 0; /* Remove the default padding */
 }
 
-.biography-block li {
+.biography-section__article-block li {
   margin-right: 0.625rem; /* 10px / 16px */
 }
 
-.biography-block li:not(:last-child)::after {
+.biography-section__article-block li:not(:last-child)::after {
   content: "/"; /* Add a slash after each item */
   margin-left: 0.625rem; /* 10px / 16px */
 }/*# sourceMappingURL=biography-layout.css.map */

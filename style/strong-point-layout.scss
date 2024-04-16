@@ -1,41 +1,41 @@
 
-  $strong-point-section-gap: 1.25rem; /* 20px / 16px */
-  $strong-point-image-width: 335px;
-  $strong-point-strengths-width: 451px;
+  $strong-point-section__points-gap: 1.25rem; /* 20px / 16px */
+  $strong-point-section__points_image-width: 335px;
+  $strong-point-section__points_strengths-width: 451px;
   $strong-point-img-height: 555px;
 
-.strong-point-section {
-margin-left: $strong-point-section-gap;
+.strong-point-section__points {
+margin-left: $strong-point-section__points-gap;
 overflow-x: auto;
 }
 
 @supports (display: grid) {
-  .strong-point-section {
+  .strong-point-section__points {
     display: grid;
-    grid-template-columns: repeat(2, $strong-point-image-width) $strong-point-strengths-width $strong-point-image-width;
-    column-gap: $strong-point-section-gap
+    grid-template-columns: repeat(2, $strong-point-section__points_image-width) $strong-point-section__points_strengths-width $strong-point-section__points_image-width;
+    column-gap: $strong-point-section__points-gap
   }
 }
 
 @supports not (display: grid) {
-  .strong-point-section {
+  .strong-point-section__points {
       display: flex; /* Activate flexbox if grid isn't supported  */
-      margin-right: $strong-point-section-gap
+      margin-right: $strong-point-section__points-gap
   }
 
-  .strong-point-image {
-      flex-basis: $strong-point-image-width;
-      margin-right: $strong-point-section-gap
+  .strong-point-section__points_image {
+      flex-basis: $strong-point-section__points_image-width;
+      margin-right: $strong-point-section__points-gap
   }
 
-  .strong-point-strengths {
-      flex-basis: $strong-point-strengths-width;
-      margin-right: $strong-point-section-gap
+  .strong-point-section__points_strengths {
+      flex-basis: $strong-point-section__points_strengths-width;
+      margin-right: $strong-point-section__points-gap
   }
 
 }
 
-.strong-point-strengths {
+.strong-point-section__points_strengths {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -44,16 +44,16 @@ gap: /* 28px / 16px */ 1.75rem;
 padding-bottom: /* 18px / 16px */ 1.125rem;
 }
 
-.strong-point-strengths > h2 {
+.strong-point-section__points_strengths > h2 {
 line-height: 1;
 }
 
-.strong-point-section-with-header > h3 {
+.strong-point-section > h3 {
 margin-left: 16.125rem; /* 258px / 16px */
 margin-bottom: 1.875rem; /* 30px / 16px */
 }
 
-.strong-point-image img {
-width: $strong-point-image-width;
+.strong-point-section__points_image img {
+width: $strong-point-section__points_image-width;
 height: $strong-point-img-height;
 }

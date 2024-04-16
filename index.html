@@ -32,7 +32,7 @@
 
     <main class="main-flex">
       <section class="promo-section">
-        <article class="roboto-medium promo-content">
+        <article class="roboto-medium promo-section__content">
           <header>
             <h2>Mod Studio</h2>
             <p>Modern Web Studio</p>
@@ -42,34 +42,28 @@
 
       <section id="Biography" class="biography-section">
         <figure class="image-with-caption">
-          <img
-            class="biography-image-desktop"
-            src="img/jared-weiss-P3cB0ynqYBw-unsplash%201.jpg"
-            alt="Katya Mills walking across a desert landscape"
-            width="100%"
-            height="840"
-          />
-          <img
-            class="biography-image-mobile"
-            src="img/jared-weiss-P3cB0ynqYBw-unsplash%202.png"
-            alt="Katya Mills walking across a desert landscape"
-            width="100%"
-            height="400"
-          />
-        </figure>
-        <figcaption class="roboto-bold biography-header">
-          <h3 class="biography-text">Biography</h3>
+          <picture>
+            <source media="(max-width: 767px)"
+                    srcset="img/jared-weiss-P3cB0ynqYBw-unsplash%202.png">
+            <img src="img/jared-weiss-P3cB0ynqYBw-unsplash%201.jpg"
+                 alt="Katya Mills walking across a desert landscape"
+                 width="100%"
+                 height="auto">
+          </picture>
+        </figure>        
+        <figcaption class="roboto-bold biography-section__header">
+          <h3 class="biography-section__header-text">Biography</h3>
         </figcaption>
-        <article class="biography-text-color biography-article">
-          <header class="biography-block biography-article-header">
+        <article class="biography-section__header-text-color biography-section__article">
+          <header class="biography-section__article-block biography-section__article-header">
             <h2>
               Katya<br />
               Mills
             </h2>
           </header>
-          <div class="roboto-medium biography-block">
+          <div class="roboto-medium biography-section__article-block">
             <p>Art Director</p>
-            <figcaption class="roboto-bold biography-block-flex-mobile">
+            <figcaption class="roboto-bold biography-section__article-block-flex-mobile">
               <p class="roboto-medium">Art Director</p>
               <h3>Biography</h3>
             </figcaption>
@@ -80,7 +74,7 @@
               <li>Design</li>
             </ul>
           </div>
-          <div class="bitter-regular biography-block">
+          <div class="bitter-regular biography-section__article-block">
             <blockquote>
               <div class="rectangle"></div>
               “The more I deal with the work<br />
@@ -94,22 +88,22 @@
 
       <section id="Designers" data-center class="roboto-bold designer-section">
         <h3>Designers</h3>
-        <div class="designer-section-articles">
+        <div class="designer-section__articles">
           <article>
-            <img
-              class="designer-image-desktop"
-              src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.jpg"
-              alt="Jess Wonder gazing into the distance with cloudy skies in the background"
-              width="572"
-              height="538"
-            />
-            <img
-              class="designer-image-mobile"
-              src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.png"
-              alt="Jess Wonder gazing into the distance with cloudy skies in the background"
-              width="310"
-              height="440"
-            />
+            <picture>
+              <source 
+                media="(max-width: 767px)"
+                srcset="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.png"
+                alt="Jess Wonder gazing into the distance with cloudy skies in the background"
+                width="310"
+                height="440">
+              <img 
+                class="designer__image"
+                src="img/spurwing-agency-r6LceZ3ckpM-unsplash%201.jpg"
+                alt="Jess Wonder gazing into the distance with cloudy skies in the background"
+                width="572"
+                height="538">
+            </picture>
             <h4>JESS WONDER</h4>
             <dl>
               <dt>From/</dt>
@@ -161,7 +155,7 @@
       </section>
 
       <section id="Testimonials" class="testimonial-section">
-        <dl class="roboto-bold testimonial-caption-with-links">
+        <dl class="roboto-bold testimonial-section__caption-with-links">
           <div>
             <dt>Creativity</dt>
             <dd>
@@ -174,14 +168,14 @@
               <a href="https://www.whitepapers.com">www.whitepapers.com</a>
             </dd>
           </div>
-          <div class="testimonial-caption-with-links-website">
+          <div class="testimonial-section__caption-with-links_website">
             <dt>Website</dt>
             <dd>
               <a href="https://www.whitepapers.com">www.whitepapers.com</a>
             </dd>
           </div>
         </dl>
-        <figure class="testimonial-image">
+        <figure class="testimonial-section__image">
           <img
             src="img/keghan-crossland-ZZxmc66SjfM-unsplash%201.jpg"
             alt="Spacious cafe interior with natural lighting and a menu board in the background"
@@ -189,11 +183,11 @@
             height="760"
           />
         </figure>
-        <header class="roboto-bold testimonial-caption-header">
+        <header class="roboto-bold testimonial-section__caption-header">
           <h3>Testimonials</h3>
         </header>
-        <figure class="testimonial-quote-and-image">
-          <blockquote class="bitter-regular testimonial-quote-text">
+        <figure class="testimonial-section__quote-and-image">
+          <blockquote class="bitter-regular testimonial-section__quote-and-image_text">
             I just really<br />
             want to do<br />
             good work<br />
@@ -203,37 +197,37 @@
             who challenge<br />
             me.
           </blockquote>
-          <img class="testimonial-image-bag-desktop"
-            src="img/sinitta-leunen-YaReHIzNdRw-unsplash%201.jpg"
-            alt="Person holding a string bag with visible items inside, walking on a brick pavement"
-          />
-          <img class="testimonial-image-bag-mobile"
-            src="img/sinitta-leunen-YaReHIzNdRw-unsplash%202.png"
-            alt="Person holding a string bag with visible items inside, walking on a brick pavement"
-          />
-        </figure>
+          <picture>
+            <source media="(max-width: 767px)"
+                    srcset="img/sinitta-leunen-YaReHIzNdRw-unsplash%202.png"
+                    width="414">
+            <img 
+                 src="img/sinitta-leunen-YaReHIzNdRw-unsplash%201.jpg"
+                 alt="Person holding a string bag with visible items inside, walking on a brick pavement">
+          </picture>
+        </figure>        
       </section>
 
       <section
         id="StrongPoints"
         data-center
-        class="roboto-bold strong-point-section-with-header"
+        class="roboto-bold strong-point-section"
       >
         <h3>Strong points</h3>
-        <div class="strong-point-section">
-          <figure class="strong-point-image">
+        <div class="strong-point-section__points">
+          <figure class="strong-point-section__points_image">
             <img
               src="img/dawid-liberadzki-vPFbVB7DPZI-unsplash%201.jpg"
               alt="Modern workspace with laptop, lamp, and plant"
             />
           </figure>
-          <figure class="strong-point-image">
+          <figure class="strong-point-section__points_image">
             <img
               src="img/avery-klein-JaXs8Tk5Iww-unsplash%201.jpg"
               alt="Cozy armchair by a wooden side table"
             />
           </figure>
-          <div class="strong-point-strengths">
+          <div class="strong-point-section__points_strengths">
             <h2>Strengths</h2>
             <ul class="bitter-regular">
               <li>Interiors</li>
@@ -248,7 +242,7 @@
               <li>Nature</li>
             </ul>
           </div>
-          <figure class="strong-point-image">
+          <figure class="strong-point-section__points_image">
             <img
               src="img/keghan-crossland-ZZxmc66SjfM-unsplash%201.jpg"
               alt="Bright cafe interior with patrons and a barista at the counter"
@@ -265,7 +259,7 @@
       </nav>
 
       <footer data-inline-cluster="justify:space-between" class="site-footer">
-        <address class="roboto-regular contact-text">
+        <address class="roboto-regular site-footer__contact-text">
           <a href="tel:+79211234567">+7 921 123-45-67</a><br />
           <a href="mailto:info@modstudio.com">info@modstudio.com</a>
         </address>
