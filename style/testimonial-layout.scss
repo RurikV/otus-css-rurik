@@ -4,8 +4,7 @@
   /* grid-column: 2 / 4; */
   grid-template-rows: auto; /* Rows will adjust based on content */
   justify-content: center;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem; /* 20px / 16px */
+  column-gap: 1.25rem; /* 20px / 16px */
 }
 
 .testimonial-section__caption-with-links {
@@ -27,14 +26,12 @@
   align-items: flex-end;
 }
 
-.testimonial-section__image {
+.testimonial-section__image{
   max-width: 451px;
   /* height: 760px; */
 }
-
 .testimonial-section__image img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .testimonial-section__quote-and-image {
@@ -54,4 +51,6 @@
 .testimonial-section__quote-and-image_text {
   font-size: 2rem;
   text-align: center;
-}/*# sourceMappingURL=testimonial-layout.css.map */
+}
+
+

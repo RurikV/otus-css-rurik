@@ -1,0 +1,128 @@
+// Define font-family variables
+$roboto-font-family: "Roboto", sans-serif;
+$bitter-font-family: "Bitter", serif;
+$playfair-font-family: "Playfair Display", serif;
+
+// Mixin for roboto styles to avoid repetition
+@mixin roboto-style($weight, $size) {
+  font-family: $roboto-font-family;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+// Mixin for bitter styles to avoid repetition
+@mixin bitter-style($weight, $size) {
+  font-family: $bitter-font-family;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+// Mixin for playfair styles to avoid repetition
+@mixin playfair-style($weight, $size) {
+  font-family: $playfair-font-family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+.roboto-regular {
+  @include roboto-style(400, 1rem);
+}
+
+.roboto-medium {
+  @include roboto-style(500, 1.125rem);
+
+  > li {
+    font-size: 1.5rem;
+  }
+
+  > header > p {
+    font-size: 1.25rem;
+  }
+
+  > p {
+    font-size: 1.125rem;
+  }
+}
+
+.roboto-bold {
+  @include roboto-style(700, 1rem);
+
+  > h3 {
+    font-size: 1.5rem;
+  }
+
+  > div > article > dl > dd,
+  > div > dd,
+  > dd {
+    font-weight: 400;
+  }
+}
+
+.roboto-black {
+  @include roboto-style(900, 1.5rem);
+}
+
+.bitter-regular {
+  @include bitter-style(400, 2.125rem);
+
+  > blockquote {
+    font-size: 1.625rem;
+  }
+}
+
+.playfair-medium,
+h1,
+h2 {
+  @include playfair-style(500, 5.375rem);
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+// Tablet and Mobile Styles
+@media screen and (max-width: 767px) {
+  .roboto-medium {
+    > header > h2 {
+      @include roboto-style(400, 4.375rem);
+    }
+
+    > header > p {
+      font-size: 1.125rem;
+    }
+  }
+
+  .roboto-bold {
+    > h3 {
+      font-size: 1.125rem;
+    }
+  }
+
+  .bitter-regular {
+    @include bitter-style(300, 1.875rem);
+
+    > li {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+
+  .playfair-medium,
+  h1,
+  h2 {
+    @include playfair-style(400, 4rem);
+  }
+
+  .strong-point-section__points_strengths > h2 {
+    font-size: 2.875rem;
+  }
+
+  // Mobile menu specific styles
+  .bitter-medium {
+    @include bitter-style(400, 2.5rem);
+  }
+}

@@ -1,0 +1,12 @@
+.site-footer {
+  background-color: #0D0D0D;
+  color: #ffffff;
+  padding: 4.375rem 1.25rem;
+}
+.site-footer .site-footer__contact-text a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: gray;
+  text-decoration-thickness: 2px;
+  font-style: normal;
+}/*# sourceMappingURL=footer.css.map */

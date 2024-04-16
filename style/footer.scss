@@ -1,0 +1,22 @@
+.site-footer {
+    background-color: #0D0D0D;
+    color: #ffffff;
+    padding: 4.375rem 1.25rem; // 70px vertical, 20px horizontal
+
+      // display: flex;
+      // flex-direction: row;
+      // flex-wrap: wrap;
+      // align-items: center;
+      // justify-content: space-between;
+  
+    .site-footer__contact-text {
+      a {
+        color: inherit; // Inherits color from parent, which is #ffffff
+        text-decoration: underline;
+        text-decoration-color: gray;
+        text-decoration-thickness: 2px;
+        font-style: normal;
+      }
+    }
+  }
+  
