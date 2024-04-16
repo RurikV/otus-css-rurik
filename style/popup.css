@@ -1,19 +1,6 @@
+@charset "UTF-8";
 .modal__trigger {
   display: none; /* Hide the checkbox */
-}
-
-.modal {
-  border: none;
-  border-radius: 0.75rem; /* 12px / 16px */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 500px;
-  z-index: 1000;
-  display: none; /* Hide dialog by default */
 }
 
 .modal__trigger:checked + .modal {
@@ -24,26 +11,94 @@
   height: 605px;
 }
 
-.modal__close {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px;
-  background-color: #f3f3f3;
-  border-radius: 5px;
+.modal {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  z-index: 1000;
+  display: none;
 }
 
-.modal__close:hover {
-  background-color: #e1e1e1;
-}
-
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem; /* 24px / 16px */
 }
 
-.modal-form__buttons {
+.modal__content {
   display: flex;
-  gap: 1.25rem; /* 20px / 16px */
-  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__field {
+  position: relative;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal__input,
+.modal__textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal__icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal__icon--name::before {
+  content: "👤";
+}
+
+.modal__icon--email::before {
+  content: "📧";
+}
+
+.modal__icon--comment::before {
+  content: "💬";
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+
+.modal__button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  background-color: #e1e1e1;
+}
+
+.modal__button--send {
+  position: relative;
+  padding-left: 34px;
+}
+
+.modal__plus {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=popup.css.map */

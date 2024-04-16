@@ -32,37 +32,44 @@
             </label>
             <input type="checkbox" id="message-popup" class="modal__trigger"/>
             <dialog class="modal">
-              <form class="modal-form">
-                  <header class="roboto-bold">
-                      <h3>Get in touch</h3>
-                  </header>
-                  <label class="roboto-regular modal-form__element">
-                    Do you have any questions? Have something to say?<br />
-                    Don't be shy, write to us:
-                  </label>
-          
-                  <label class="modal-form__element">
-                      Name
-                      <input type="text" name="name" placeholder="3+ Characters" required
-                             minlength="3" autofocus>
-                  </label>
-          
-                  <label class="modal-form__element">
-                      Email
-                      <input type="email" name="email" placeholder="name@email.com" required>
-                  </label>
-          
-                  <label class="modal-form__element">
-                      Comment
-                      <textarea rows="5" name="comment" placeholder="Some text..."></textarea>
-                  </label>
-          
-                  <div class="modal-form__buttons">
-                      <button class="modal__close" type="button">Cancel</button>
-                      <button type="submit">Send</button>
+              <form class="modal__form">
+                <header class="roboto-bold">
+                  <h3>Get in touch</h3>
+                </header>
+                <p class="roboto-regular">
+                  Do you have any questions? Have something to say?<br>
+                  Don't be shy, write to us:
+                </p>
+            
+                <div class="modal__content">
+                  <div class="modal__field">
+                    <label for="name" class="modal__label">Name</label>
+                    <input type="text" id="name" class="modal__input" placeholder="3+ Characters" required minlength="3" autofocus>
+                    <span class="modal__icon modal__icon--name"></span>
                   </div>
+            
+                  <div class="modal__field">
+                    <label for="email" class="modal__label">E-mail</label>
+                    <input type="email" id="email" class="modal__input" placeholder="name@email.com" required>
+                    <span class="modal__icon modal__icon--email"></span>
+                  </div>
+            
+                  <div class="modal__field modal__field--comment">
+                    <label for="comment" class="modal__label">Comment</label>
+                    <textarea id="comment" class="modal__textarea" rows="5" placeholder="Some text..."></textarea>
+                    <span class="modal__icon modal__icon--comment"></span>
+                  </div>
+                </div>
+            
+                <div class="modal__buttons">
+                  <button class="modal__button modal__button--cancel" type="button">Cancel</button>
+                  <button class="modal__button modal__button--send" type="submit">
+                    Send
+                  </button>
+                </div>
               </form>
-          </dialog>
+            </dialog>
+            
           </li>
         </ul>
       </nav>

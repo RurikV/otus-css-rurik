@@ -26,6 +26,10 @@ $playfair-font-family: "Playfair Display", serif;
 
 .roboto-regular {
   @include roboto-style(400, 1rem); /* 16px / 16px */
+
+  > p {
+    font-size: 1.125rem; /* 18px / 16px */
+  }
 }
 
 .roboto-medium {
