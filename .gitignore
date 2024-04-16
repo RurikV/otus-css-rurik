@@ -400,5 +400,5 @@ FodyWeavers.xsd
 # Ignore all .css files
 *.css
 
-# Allow the specific styles.css file in the style directory
-!style/styles.css
+# Allow the specific styles.css file
+!styles.css
