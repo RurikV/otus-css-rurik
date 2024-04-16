@@ -397,8 +397,8 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Ignore all .css files
-*.css
+# # Ignore all .css files
+# *.css
 
-# Allow the specific styles.css file
-!styles.css
+# # Allow the specific styles.css file in the style directory
+# !style/styles.css
