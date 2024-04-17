@@ -26,7 +26,7 @@
           <li><a href="#Designers">Designers</a></li>
           <li><a href="#Testimonials">Testimonials</a></li>
           <li><a href="#StrongPoints">Strong points</a></li>
-          <li>
+          <li class="modal-backdrop">
             <label for="message-popup">
               <img src="img/popup-message.png" alt="Message">
             </label>
@@ -69,14 +69,17 @@
                 </div>
             
                 <div class="modal__buttons">
-                  <button class="modal__button modal__button--cancel" type="button">Cancel</button>
+                  <button type="reset" class="modal__button modal__button--cancel">
+                    <label for="message-popup">
+                      Cancel
+                    </label>
+                  </button>
                   <button class="modal__button modal__button--send" type="submit">
                     Send
                   </button>
                 </div>
               </form>
-            </dialog>
-            
+            </dialog>            
           </li>
         </ul>
       </nav>
