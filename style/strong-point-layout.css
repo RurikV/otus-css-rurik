@@ -1,60 +1,50 @@
-:root {
-    --strong-point-section-gap: 1.25rem; /* 20px / 16px */
-    --strong-point-image-width: 335px;
-    --strong-point-strengths-width: 451px;
-    --strong-point-img-height: 555px;
-  }
-
-.strong-point-section {
-  margin-left: var(--strong-point-section-gap);
+/* 20px / 16px */
+.strong-point-section__points {
+  margin-left: 1.25rem;
   overflow-x: auto;
 }
 
 @supports (display: grid) {
-  .strong-point-section {
+  .strong-point-section__points {
     display: grid;
-    grid-template-columns: repeat(2, var(--strong-point-image-width)) var(--strong-point-strengths-width) var(--strong-point-image-width);
-    column-gap: var(--strong-point-section-gap)
+    grid-template-columns: repeat(2, 335px) 451px 335px;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 }
-
 @supports not (display: grid) {
-    .strong-point-section {
-        display: flex; /* Activate flexbox if grid isn't supported  */
-        margin-right: var(--strong-point-section-gap)
-    }
-
-    .strong-point-image {
-        flex-basis: var(--strong-point-image-width);
-        margin-right: var(--strong-point-section-gap)
-    }
-
-    .strong-point-strengths {
-        flex-basis: var(--strong-point-strengths-width);
-        margin-right: var(--strong-point-section-gap)
-    }
-
+  .strong-point-section__points {
+    display: flex; /* Activate flexbox if grid isn't supported  */
+    margin-right: 1.25rem;
+  }
+  .strong-point-section__points_image {
+    flex-basis: 335px;
+    margin-right: 1.25rem;
+  }
+  .strong-point-section__points_strengths {
+    flex-basis: 451px;
+    margin-right: 1.25rem;
+  }
 }
-
-.strong-point-strengths {
+.strong-point-section__points_strengths {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: /* 28px / 16px */ 1.75rem;
-  padding-bottom: /* 18px / 16px */ 1.125rem;
+  gap: 1.75rem;
+  padding-bottom: 1.125rem;
 }
 
-.strong-point-strengths > h2 {
+.strong-point-section__points_strengths > h2 {
   line-height: 1;
 }
 
-.strong-point-section-with-header > h3 {
+.strong-point-section > h3 {
   margin-left: 16.125rem; /* 258px / 16px */
   margin-bottom: 1.875rem; /* 30px / 16px */
 }
 
-.strong-point-image img {
-  width: var(--strong-point-image-width);
-  height: var(--strong-point-img-height);
-}
+.strong-point-section__points_image img {
+  width: 335px;
+  height: 555px;
+}/*# sourceMappingURL=strong-point-layout.css.map */

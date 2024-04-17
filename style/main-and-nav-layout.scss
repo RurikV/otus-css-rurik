@@ -1,0 +1,65 @@
+// Variables
+$main-font-color: #000;
+$biography-section__header-text-color: #0d0d0d;
+
+// Mixins
+@mixin flex-column-space-between($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $gap;
+}
+
+@mixin link-style($color) {
+  text-decoration: none; // Removes underline from links
+  color: $color; // Sets text color
+}
+
+// Base element styles
+ul {
+  list-style-type: none; // Removes list bullet points
+}
+
+// Component specific styles
+.main-flex {
+  @include flex-column-space-between(9.375rem); // 150px / 16px
+}
+
+.site-navigation,
+.testimonial-section__caption-with-links {
+  li,
+  div {
+    a {
+      @include link-style($main-font-color);
+
+      // Uncomment the padding if necessary
+      // padding: 0.5rem 0;
+    }
+  }
+}
+
+.biography-section__header-text-color {
+  color: $biography-section__header-text-color;
+}
+
+.site-footer__contact-text {
+  line-height: 1.625;
+  text-transform: uppercase;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 0 0.2rem; // Short hand for row gap and column gap
+
+  // Uncomment if grid-template-areas are needed
+  // grid-template-areas: "a a a" "b c c" "b c c";
+  
+  dt {
+    grid-column-start: 1;
+  }
+
+  dd {
+    grid-column-start: 2;
+  }
+}
