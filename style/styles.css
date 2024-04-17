@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf");
@@ -722,15 +721,18 @@ dl dd {
 }
 
 .modal__icon--name::before {
-  content: "👤";
+  content: "\f007";
+  font-family: FontAwesome;
 }
 
 .modal__icon--email::before {
-  content: "📧";
+  content: "\f041";
+  font-family: FontAwesome;
 }
 
 .modal__icon--comment::before {
-  content: "💬";
+  content: "\f075";
+  font-family: FontAwesome;
 }
 
 .modal__buttons {
@@ -767,4 +769,13 @@ dl dd {
   content: "+";
   margin-right: 10px;
   font-family: FontAwesome;
+}
+
+.modal__field > svg {
+  position: absolute;
+  top: 2.1rem;
+  right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  pointer-events: none; /* Makes sure clicks on the icon don't interfere with the input */
 }/*# sourceMappingURL=styles.css.map */
