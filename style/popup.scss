@@ -16,7 +16,6 @@
 .modal {
   border: none;
   border-radius: 12px;
-  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -28,13 +27,6 @@
 
   background-color: rgba(255, 255, 255, 0);
 }
-// .modal {
-//   width: 512px;
-//   gap: 24px;
-//   border: none;
-//   background-color: rgba(255, 255, 255, 0);
-//   box-sizing: border-box;
-// }
 
 .modal__form {
   display: flex;
