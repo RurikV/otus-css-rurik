@@ -655,8 +655,8 @@ dl dd {
   display: block; /* Show modal when checkbox is checked */
   position: fixed;
   overflow: hidden;
-  width: 480px;
-  height: 600px;
+  width: 496px;
+  height: 612px;
 }
 
 .modal {
@@ -681,6 +681,7 @@ dl dd {
   z-index: 1;
   border-radius: 10px;
   background: #ffffff;
+  padding: 1.25rem; /* 20px / 16px */
 }
 
 .modal__form::after {
@@ -690,8 +691,8 @@ dl dd {
   top: 0;
   left: 0;
   margin: 15px;
-  width: 480px;
-  height: 608px;
+  width: 462px;
+  height: 598px;
   z-index: -1;
   border-radius: 10px;
   animation-duration: 3s;
@@ -703,7 +704,7 @@ dl dd {
 
 @keyframes frame {
   100% {
-    transform: rotate(2deg);
+    transform: rotate(3deg);
   }
 }
 .modal__content {
