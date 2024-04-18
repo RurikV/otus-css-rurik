@@ -650,13 +650,18 @@ dl dd {
   display: none; /* Hide the checkbox */
 }
 
-.modal__trigger:checked + .modal-backdrop > .modal {
+.modal__trigger:checked ~ .page-wrapper {
+  overflow: hidden;
+  height: 100vh; /* Prevent scrolling within the page-wrapper */
+}
+
+.modal__trigger:checked + .page-wrapper .modal {
   display: block; /* Show modal when checkbox is checked */
   width: 496px;
   height: 612px;
 }
 
-.modal__trigger:checked + .modal-backdrop {
+.modal__trigger:checked + .page-wrapper .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -817,8 +822,4 @@ dl dd {
 
 .popup-message:hover {
   transform: scale(1.15);
-}
-
-body.modal {
-  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */
