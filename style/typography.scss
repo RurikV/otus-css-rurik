@@ -1,28 +1,5 @@
-// Define font-family variables
-$roboto-font-family: "Roboto", sans-serif;
-$bitter-font-family: "Bitter", serif;
-$playfair-font-family: "Playfair Display", serif;
-
-// Mixin for roboto styles to avoid repetition
-@mixin roboto-style($weight, $size) {
-  font-family: $roboto-font-family;
-  font-weight: $weight;
-  font-size: $size;
-}
-
-// Mixin for bitter styles to avoid repetition
-@mixin bitter-style($weight, $size) {
-  font-family: $bitter-font-family;
-  font-weight: $weight;
-  font-size: $size;
-}
-
-// Mixin for playfair styles to avoid repetition
-@mixin playfair-style($weight, $size) {
-  font-family: $playfair-font-family;
-  font-size: $size;
-  font-weight: $weight;
-}
+@import 'variables';
+@import 'mixins';
 
 .roboto-regular {
   @include roboto-style(400, 1rem); /* 16px / 16px */

@@ -1,33 +1,81 @@
-.modal_backdrop,
+@import "variables";
+@import "mixins";
+
 .modal__trigger {
   display: none; /* Hide the checkbox */
 }
 
-.modal__trigger:checked + .modal {
-  display: block; /* Show modal when checkbox is checked */
-  position: fixed;
+.modal__trigger:checked ~ .page-wrapper {
   overflow: hidden;
-  width: 480px;
-  height: 588px;
+  height: 100vh; /* Prevent scrolling within the page-wrapper */
 }
+
+.modal__trigger:checked + .page-wrapper .modal {
+  display: block; /* Show modal when checkbox is checked */
+  width: 496px;
+  height: 612px;
+}
+
+.modal__trigger:checked + .page-wrapper .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0,0,0,0.5);
+}
+
 .modal {
   border: none;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   width: 80%;
-  max-width: 480px;
+  max-width: 512px;
   z-index: 1000;
   display: none;
+
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .modal__form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem; /* 24px / 16px */
+  opacity: 1;
+  z-index: 1;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 1.25rem; /* 20px / 16px */
+}
+.modal__form::after {
+  content: "";
+  border: #ffffff 2px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  width: 462px;
+  height: 598px;
+  z-index: -1;
+  border-radius: 10px;
+  animation-duration: 3s;
+  animation-name: frame;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes frame {
+  0% {
+  }
+
+  100% {
+    transform: rotate(3deg);
+  }
 }
 
 .modal__content {
@@ -38,6 +86,15 @@
 
 .modal__field {
   position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.modal__field:hover {
+  background-color: lightgrey;
+}
+
+.modal__field:focus-within {
+  outline: darkgray 1px solid;
 }
 
 .modal__label {
@@ -110,18 +167,12 @@
   }
 }
 
-/* The backdrop that covers the entire screen */
-// .modal-backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-//     -webkit-backdrop-filter: blur(5px); /* For Safari compatibility */
-//     background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
-//     z-index: 1000; /* Ensure it's above the rest of the page */
-//   }
+.popup-message {
+  width: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-message:hover {
+  transform: scale(1.15);
+}
+
