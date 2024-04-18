@@ -25,22 +25,26 @@ $playfair-font-family: "Playfair Display", serif;
 }
 
 .roboto-regular {
-  @include roboto-style(400, 1rem);
+  @include roboto-style(400, 1rem); /* 16px / 16px */
+
+  > p {
+    font-size: 1.125rem; /* 18px / 16px */
+  }
 }
 
 .roboto-medium {
-  @include roboto-style(500, 1.125rem);
+  @include roboto-style(500, 1.125rem); /* 18px / 16px */
 
   > li {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 24px / 16px */
   }
 
   > header > p {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* 20px / 16px */
   }
 
   > p {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /* 18px / 16px */
   }
 }
 
@@ -48,7 +52,7 @@ $playfair-font-family: "Playfair Display", serif;
   @include roboto-style(700, 1rem);
 
   > h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 24px / 16px */
   }
 
   > div > article > dl > dd,
