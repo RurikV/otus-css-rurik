@@ -646,39 +646,74 @@ dl dd {
     align-self: flex-end;
   }
 }
-.modal_backdrop,
 .modal__trigger {
   display: none; /* Hide the checkbox */
 }
 
-.modal__trigger:checked + .modal {
+.modal__trigger:checked + .modal-backdrop > .modal {
   display: block; /* Show modal when checkbox is checked */
+  width: 496px;
+  height: 612px;
+}
+
+.modal__trigger:checked + .modal-backdrop {
   position: fixed;
-  overflow: hidden;
-  width: 480px;
-  height: 588px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
   border: none;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   width: 80%;
-  max-width: 480px;
+  max-width: 512px;
   z-index: 1000;
   display: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .modal__form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem; /* 24px / 16px */
+  opacity: 1;
+  z-index: 1;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 1.25rem; /* 20px / 16px */
 }
 
+.modal__form::after {
+  content: "";
+  border: #ffffff 2px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  width: 462px;
+  height: 598px;
+  z-index: -1;
+  border-radius: 10px;
+  animation-duration: 3s;
+  animation-name: frame;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes frame {
+  100% {
+    transform: rotate(3deg);
+  }
+}
 .modal__content {
   display: flex;
   flex-direction: column;
@@ -687,6 +722,15 @@ dl dd {
 
 .modal__field {
   position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.modal__field:hover {
+  background-color: lightgrey;
+}
+
+.modal__field:focus-within {
+  outline: darkgray 1px solid;
 }
 
 .modal__label {
@@ -766,4 +810,15 @@ dl dd {
   pointer-events: none; /* Makes sure clicks on the icon don't interfere with the input */
 }
 
-/* The backdrop that covers the entire screen *//*# sourceMappingURL=styles.css.map */
+.popup-message {
+  width: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup-message:hover {
+  transform: scale(1.15);
+}
+
+body.modal {
+  overflow: hidden;
+}/*# sourceMappingURL=styles.css.map */
