@@ -646,6 +646,7 @@ dl dd {
     align-self: flex-end;
   }
 }
+.modal_backdrop,
 .modal__trigger {
   display: none; /* Hide the checkbox */
 }
@@ -720,21 +721,6 @@ dl dd {
   transform: translateY(-50%);
 }
 
-.modal__icon--name::before {
-  content: "\f007";
-  font-family: FontAwesome;
-}
-
-.modal__icon--email::before {
-  content: "\f041";
-  font-family: FontAwesome;
-}
-
-.modal__icon--comment::before {
-  content: "\f075";
-  font-family: FontAwesome;
-}
-
 .modal__buttons {
   display: flex;
   justify-content: space-around;
@@ -778,4 +764,6 @@ dl dd {
   height: 2rem;
   width: 2rem;
   pointer-events: none; /* Makes sure clicks on the icon don't interfere with the input */
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* The backdrop that covers the entire screen *//*# sourceMappingURL=styles.css.map */
